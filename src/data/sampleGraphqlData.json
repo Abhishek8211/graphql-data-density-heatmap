@@ -1,0 +1,185 @@
+{
+  "Patient": [
+    {
+      "id": "P-001",
+      "name": "Aisha Khan",
+      "gender": "female",
+      "birthDate": "1989-03-12",
+      "phone": "+1-555-0101",
+      "address": "Maple St"
+    },
+    {
+      "id": "P-002",
+      "name": "Liam Carter",
+      "gender": "male",
+      "birthDate": "1974-11-02",
+      "phone": null,
+      "address": "River Rd"
+    },
+    {
+      "id": "P-003",
+      "name": "Noah Singh",
+      "gender": "male",
+      "birthDate": null,
+      "phone": "+1-555-0103",
+      "address": null
+    },
+    {
+      "id": "P-004",
+      "name": "Emma Rossi",
+      "gender": "female",
+      "birthDate": "2001-07-18",
+      "phone": "+1-555-0104",
+      "address": "Pine Ave"
+    },
+    {
+      "id": "P-005",
+      "name": null,
+      "gender": "female",
+      "birthDate": "1995-09-05",
+      "phone": null,
+      "address": "Oak Blvd"
+    }
+  ],
+  "Observation": [
+    {
+      "id": "O-100",
+      "patientId": "P-001",
+      "code": "heart-rate",
+      "value": 72,
+      "unit": "bpm",
+      "status": "final",
+      "issuedAt": "2026-02-11"
+    },
+    {
+      "id": "O-101",
+      "patientId": "P-001",
+      "code": "temperature",
+      "value": null,
+      "unit": "C",
+      "status": "final",
+      "issuedAt": "2026-02-11"
+    },
+    {
+      "id": "O-102",
+      "patientId": "P-002",
+      "code": "oxygen-sat",
+      "value": 96,
+      "unit": "%",
+      "status": "preliminary",
+      "issuedAt": null
+    },
+    {
+      "id": "O-103",
+      "patientId": "P-003",
+      "code": "blood-pressure",
+      "value": "120/80",
+      "unit": "mmHg",
+      "status": null,
+      "issuedAt": "2026-01-20"
+    },
+    {
+      "id": "O-104",
+      "patientId": "P-005",
+      "code": "resp-rate",
+      "value": null,
+      "unit": null,
+      "status": "entered-in-error",
+      "issuedAt": "2026-03-01"
+    }
+  ],
+  "Medication": [
+    {
+      "id": "M-201",
+      "patientId": "P-001",
+      "medicationName": "Atorvastatin",
+      "dosage": "20mg",
+      "route": "oral",
+      "startDate": "2025-12-15",
+      "endDate": null
+    },
+    {
+      "id": "M-202",
+      "patientId": "P-002",
+      "medicationName": "Metformin",
+      "dosage": "500mg",
+      "route": "oral",
+      "startDate": "2026-01-02",
+      "endDate": null
+    },
+    {
+      "id": "M-203",
+      "patientId": "P-003",
+      "medicationName": "Lisinopril",
+      "dosage": null,
+      "route": "oral",
+      "startDate": "2026-01-28",
+      "endDate": "2026-02-15"
+    },
+    {
+      "id": "M-204",
+      "patientId": "P-004",
+      "medicationName": "Albuterol",
+      "dosage": "2 puffs",
+      "route": null,
+      "startDate": null,
+      "endDate": null
+    },
+    {
+      "id": "M-205",
+      "patientId": "P-005",
+      "medicationName": null,
+      "dosage": "10mg",
+      "route": "oral",
+      "startDate": "2026-02-05",
+      "endDate": "2026-03-05"
+    }
+  ],
+  "Encounter": [
+    {
+      "id": "E-301",
+      "patientId": "P-001",
+      "encounterType": "outpatient",
+      "reason": "follow-up",
+      "provider": "Dr. Rivera",
+      "startTime": "2026-02-11T09:00:00Z",
+      "endTime": "2026-02-11T09:25:00Z"
+    },
+    {
+      "id": "E-302",
+      "patientId": "P-002",
+      "encounterType": "emergency",
+      "reason": "chest pain",
+      "provider": "Dr. Chen",
+      "startTime": "2026-02-14T17:30:00Z",
+      "endTime": "2026-02-14T18:45:00Z"
+    },
+    {
+      "id": "E-303",
+      "patientId": "P-003",
+      "encounterType": "inpatient",
+      "reason": null,
+      "provider": "Dr. Wallace",
+      "startTime": "2026-01-19T11:10:00Z",
+      "endTime": null
+    },
+    {
+      "id": "E-304",
+      "patientId": "P-004",
+      "encounterType": "virtual",
+      "reason": "medication review",
+      "provider": null,
+      "startTime": "2026-03-02T13:00:00Z",
+      "endTime": "2026-03-02T13:20:00Z"
+    },
+    {
+      "id": "E-305",
+      "patientId": "P-005",
+      "encounterType": null,
+      "reason": "routine check",
+      "provider": "Dr. Patel",
+      "startTime": null,
+      "endTime": null
+    }
+  ]
+}
