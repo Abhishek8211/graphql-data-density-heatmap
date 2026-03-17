@@ -22,7 +22,7 @@ import {
 } from "./utils/density";
 
 const defaultDatasetId = datasetLibrary[0]?.id ?? "";
-const githubUrl = "https://github.com/Abhishek8211/MovieHub.git";
+const githubUrl = "https://github.com/Abhishek8211/";
 
 function App() {
   const [theme, setTheme] = useState(() => {
